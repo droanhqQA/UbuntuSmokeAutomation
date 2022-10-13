@@ -41,7 +41,7 @@ public class PermissionTest {
 		System.out.println(currentTimestamp);
 		// Path of the excel file
 		final URL resource = PermissionTest.class.getResource("/Automation.xlsx");
-		System.out.println(resource);
+		System.out.println("file  "+resource);
 		fs = new FileInputStream((resource.toString().substring("file:/".length(), resource.toString().length())));
 
 
@@ -52,7 +52,7 @@ public class PermissionTest {
 		
 		// System.out.println(detailDAO.connectionName()+"\n"+detailDAO.connectionString());
 		final URL driver_path = PermissionTest.class.getResource("/chromedriver.exe");
-		System.out.println(driver_path);
+		System.out.println("driver:  "driver_path);
 
 		System.setProperty("webdriver.chrome.driver",
 				(driver_path.toString().substring("file:/".length(), driver_path.toString().length())));

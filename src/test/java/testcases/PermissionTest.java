@@ -51,7 +51,7 @@ public class PermissionTest {
 		String u_pass = "qwerty";
 		
 		// System.out.println(detailDAO.connectionName()+"\n"+detailDAO.connectionString());
-		final URL driver_path = PermissionTest.class.getResource("/chromedriver.exe");
+		final URL driver_path = PermissionTest.class.getResource("/chromedriver");
 		System.out.println("driver:  "+driver_path);
 
 		System.setProperty("webdriver.chrome.driver","/"+

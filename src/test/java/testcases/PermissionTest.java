@@ -19,6 +19,7 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
+import com.utils.TakeScreenshots;
 
 import TestJenkins.testjenkins.AppPermission;
 import TestJenkins.testjenkins.UserLogin;
@@ -114,7 +115,17 @@ public class PermissionTest {
 	
 	@AfterMethod
 	public void tearDown(ITestResult result, ITestContext testContext) {
-	
+		
+			try {
+				if (ITestResult.FAILURE == result.getStatus()) {
+					System.out.println(testContext.getName() + " " + result.getMethod().getMethodName());
+					new TakeScreenshots().takeScreenShot(testContext.getName() + "_" + result.getMethod().getMethodName(),
+							"Permission", driver);
+				}
+			} catch (Exception e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
 		driver.quit();
 	}
 }

@@ -6,16 +6,23 @@ import java.util.List;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.ExpectedCondition;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+
+
 
 
 public class AppPermission {
 	final String appOptions="//div[@data-appname='AutoApp']/descendant::div[@class='ui vertical menu card-menu']";
 	final String editPermission="//div[@data-appname='AutoApp']/descendant::div[contains(@class,'edit-permission')]";
 	final String saveBtn="//*[contains(@class,'save-permission')]";
+	final String add_query="//*[text()='AutoTestMongo']/ancestor::div[contains(@class,'head')]/descendant::div[contains(@class,'add-query')]";
+	final String option_menu="//*[text()='AutoTestMongo']/ancestor::div[contains(@class,'head')]/descendant::div[contains(@class,'option')]";
+	final String edit_permission=option_menu+"/*[contains(@class,'edit-permission')]";
 	
 	public void loginOtherUser(WebDriver driver)
 	{
@@ -42,7 +49,7 @@ public class AppPermission {
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 		driver.findElement(By.xpath(editPermission)).click();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(30));
-		WebElement element=driver.findElement(By.xpath("//div[@class='user-table']/descendant::input[@id='"+permission+"']"));
+		WebElement element=driver.findElement(By.xpath("//div[@class='user-table']/descendant::input[@id='"+permission+"sachin@studion.com']"));
 		
 		JavascriptExecutor js_exe = (JavascriptExecutor)driver;
 		js_exe.executeScript("arguments[0].click();", element);
@@ -50,15 +57,15 @@ public class AppPermission {
 		loginOtherUser(driver);
 		switch(permission)
 		{
-		case("default-editor"):
+		case("editor"):
 			menu_opt=checkEditor(driver);
 			hf_value=gethfPermission(driver);
 			break;
-		case("default-useonly"):
+		case("useonly"):
 			menu_opt=checkPreviewOnly(driver);
 			hf_value=gethfPermission(driver);
 			break;
-		case("default-none"):
+		case("none"):
 			menu_opt=checkNone(driver);
 			hf_value="0000";
 			break;
@@ -90,7 +97,7 @@ public class AppPermission {
 	{
 		
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(30));
-		String getClass=driver.findElement(By.xpath("//div[@data-appname='AutoApp']/descendant::div[@class='card-menu']/i")).getAttribute("class");
+		String getClass=driver.findElement(By.xpath("//div[@data-appname='AutoApp']/descendant::div[contains(@class,'card-menu')]/i")).getAttribute("class");
 		System.out.println(getClass);
 		return getClass;
 	}
@@ -133,4 +140,72 @@ public class AppPermission {
 		System.out.println(hfPerm);
 		return hfPerm;
 	}
+	
+	void gotoConnector(WebDriver driver)
+	{
+		new WebDriverWait(driver, Duration.ofSeconds(60))
+		.until(ExpectedConditions.elementToBeClickable(By.xpath("//*[@data-header='Connectors']/div/div/div[2]")));
+		driver.findElement(By.xpath("//*[@data-header='Connectors']/div/div/div[2]")).click();
+	}
+	
+	public ArrayList<String> changeConnPermission(String permission,WebDriver driver)
+	{
+		gotoConnector(driver);
+		driver.findElement(By.xpath(option_menu)).click();
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+		driver.findElement(By.xpath(edit_permission)).click();
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(30));
+		WebElement element=driver.findElement(By.xpath("//div[@class='user-table']/descendant::input[@id='"+permission+"sachin@studion.com']"));
+		
+		JavascriptExecutor js_exe = (JavascriptExecutor)driver;
+		js_exe.executeScript("arguments[0].click();", element);
+		driver.findElement(By.xpath(saveBtn)).click();
+		loginOtherUser(driver);
+		gotoConnector(driver);
+		Boolean menu_opt=false;
+		switch(permission)
+		{
+		case("useonly"):
+			menu_opt=checkUseOnly(driver);
+			
+			break;
+		case("none"):
+			menu_opt=checkConnNone(driver);
+			
+			break;
+			
+		}
+		
+		ArrayList<String> perm = new ArrayList<String>();
+		perm.add(0, menu_opt.toString());
+		
+		
+		return perm;
+	}
+	
+
+	 Boolean checkConnNone(WebDriver driver) {
+		// TODO Auto-generated method stub
+		try {
+			driver.findElement(By.xpath("//*[text()='AutoTestMongo']"));
+			return false;
+		}
+		catch(NoSuchElementException e) {
+			return true;
+		}
+		
+	}
+
+	 Boolean checkUseOnly(WebDriver driver) {
+		// TODO Auto-generated method stub
+		try {
+			driver.findElement(By.xpath(add_query));
+			return false;
+		}
+		catch(NoSuchElementException e) {
+			return true;
+		}
+		
+	}
+
 }

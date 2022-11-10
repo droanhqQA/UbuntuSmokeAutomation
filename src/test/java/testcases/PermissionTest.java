@@ -59,7 +59,7 @@ public class PermissionTest {
 		System.out.println(driver_path);
 
 		System.setProperty("webdriver.chrome.driver",
-				("/var/lib/jenkins/driver/chromedriver");
+				"/var/lib/jenkins/driver/chromedriver");
 		
 				ChromeOptions options = new ChromeOptions();
 				//options.addArguments("--headless");

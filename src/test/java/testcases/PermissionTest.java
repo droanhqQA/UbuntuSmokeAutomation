@@ -62,7 +62,7 @@ public class PermissionTest {
 				"/var/lib/jenkins/driver/chromedriver");
 		
 				ChromeOptions options = new ChromeOptions();
-				//options.addArguments("--headless");
+				options.addArguments("--headless");
 				options.addArguments("--window-size=1920,1080");
 				options.addArguments("--no-sandbox");
 				options.addArguments("--disable-setuid-sandbox");

@@ -89,8 +89,7 @@ public class PermissionTest {
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 
 	}
-	
-	@Test(priority = 1)
+	@Test(retryAnalyzer = RetryAnalyzer.class,priority = 1)
 	public void testGroupEditorPrem()
 	{
 		grpPermission.setEditor(driver);
@@ -100,7 +99,7 @@ public class PermissionTest {
 				 getPermission.get(1).contentEquals("0010"); 
 		assertTrue(result);
 	}
-	@Test(priority = 2)
+	@Test(retryAnalyzer = RetryAnalyzer.class,priority = 2)
 	public void testGroupPreviewPrem()
 	{
 		grpPermission.setPreview(driver);
@@ -111,7 +110,7 @@ public class PermissionTest {
 		assertTrue(result);
 	}
 	
-	@Test(priority = 3)
+	@Test(retryAnalyzer = RetryAnalyzer.class,priority = 3)
 	public void testGroupNonePrem()
 	{
 		grpPermission.setNone(driver);
@@ -122,7 +121,7 @@ public class PermissionTest {
 		assertTrue(result);
 	}
 	
-	@Test(priority = 4)
+	@Test(retryAnalyzer = RetryAnalyzer.class,priority = 4)
 	public void testNone()
 	{
 		getPermission=appPermission.changePermission("none", driver);
@@ -132,7 +131,7 @@ public class PermissionTest {
 		assertTrue(result);
 	}
 	
-	@Test(priority = 5)
+	@Test(retryAnalyzer = RetryAnalyzer.class,priority = 5)
 	public void testPreviewOnly()
 	{
 		getPermission=appPermission.changePermission("useonly", driver);
@@ -141,7 +140,7 @@ public class PermissionTest {
 						 getPermission.get(1).contentEquals("0001");
 		assertTrue(result);
 	}
-	@Test(priority = 6)
+	@Test(retryAnalyzer = RetryAnalyzer.class,priority = 6)
 	
 	public void testEditor()
 	{
@@ -151,7 +150,7 @@ public class PermissionTest {
 						 getPermission.get(1).contentEquals("0010"); 
 		assertTrue(result);
 	}
-	@Test
+	@Test(retryAnalyzer = RetryAnalyzer.class)
 	public void testGroupConnUseonly()
 	{
 		grpPermission.setConnUseOnly(driver);
@@ -160,7 +159,7 @@ public class PermissionTest {
 		assertTrue(result);
 		
 	}
-	@Test(dependsOnMethods = "testGroupConnUseonly")
+	@Test(retryAnalyzer = RetryAnalyzer.class,dependsOnMethods = "testGroupConnUseonly")
 	public void testGroupConnNone()
 	{
 		grpPermission.setConnNone(driver);
@@ -170,7 +169,7 @@ public class PermissionTest {
 		assertTrue(result);
 		
 	}
-	@Test(dependsOnMethods = "testGroupConnNone")
+	@Test(retryAnalyzer = RetryAnalyzer.class,dependsOnMethods = "testGroupConnNone")
 	public void testConnUseOnly()
 	{
 		getPermission=appPermission.changeConnPermission("useonly", driver);
@@ -179,7 +178,7 @@ public class PermissionTest {
 		assertTrue(result);
 		
 	}
-	@Test(dependsOnMethods = "testConnUseOnly")
+	@Test(retryAnalyzer = RetryAnalyzer.class,dependsOnMethods = "testConnUseOnly")
 	public void testConnNone()
 	{
 		getPermission=appPermission.changeConnPermission("none", driver);

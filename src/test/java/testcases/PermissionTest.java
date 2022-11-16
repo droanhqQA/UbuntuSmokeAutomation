@@ -109,7 +109,7 @@ public class PermissionTest {
 				 getPermission.get(1).contentEquals("0001");
 		assertTrue(result);
 	}
-	
+	/*
 	@Test(retryAnalyzer = RetryAnalyzer.class,priority = 3)
 	public void testGroupNonePrem()
 	{
@@ -186,7 +186,7 @@ public class PermissionTest {
 		boolean result  =Boolean.parseBoolean(getPermission.get(0));
 		assertTrue(result);
 		
-	}
+	}*/
 	@AfterMethod
 	public void closeBrowser(ITestResult result)
 	{

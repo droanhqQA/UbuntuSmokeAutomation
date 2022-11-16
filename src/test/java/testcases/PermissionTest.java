@@ -76,7 +76,7 @@ public class PermissionTest {
 		grpPermission = new GroupPermission();
 		connPermission = new ConnectorPermission();
 		getPermission = new ArrayList<String>();
-		driver.get("https://ubuntu.onprem.dronahq.com/");
+		driver.get("https://ubuntu.onprem.dronahq.com");
 		driver.manage().window().maximize();
 		driver.manage().deleteAllCookies();
 		user.login(u_name, u_pass);

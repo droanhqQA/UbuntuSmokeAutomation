@@ -66,14 +66,14 @@ public class ApplicationTest {
 		final URL driver_path = ApplicationTest.class.getResource("/chromedriver.exe");
 	       System.out.println(driver_path);
 		
-		System.setProperty("webdriver.chrome.driver", (driver_path.toString().substring("file:/".length(),driver_path.toString().length())));
-		downloadFilepath = "D:\\Nitin\\DronaDeletecs\\downloads";
+		System.setProperty("webdriver.chrome.driver","/var/lib/jenkins/driver/chromedriver");
+		downloadFilepath = "/home/nitin/Downloads";
 		HashMap<String, Object> chromePrefs = new HashMap<String, Object>();
 		chromePrefs.put("profile.default_content_settings.popups", 0);
 		chromePrefs.put("download.default_directory", downloadFilepath);
 		ChromeOptions options = new ChromeOptions();
 		options.setExperimentalOption("prefs", chromePrefs);
-		//options.addArguments("headless");
+		options.addArguments("headless");
 		options.addArguments("window-size=1500,800");
 		options.addArguments("incognito");
 		options.addArguments("disable-infobars");

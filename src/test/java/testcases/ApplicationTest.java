@@ -55,7 +55,7 @@ public class ApplicationTest {
 		final URL resource = ApplicationTest.class.getResource("/Automation.xlsx");
 	       System.out.println(resource);
 		
-		FileInputStream  fs = new FileInputStream((resource.toString().substring("file:/".length(),resource.toString().length())));
+		FileInputStream  fs = new FileInputStream("/"+(resource.toString().substring("file:/".length(),resource.toString().length())));
 		XSSFWorkbook workbook= new XSSFWorkbook(fs);
 		
 		// con_sheet = workbook.getSheetAt(1);

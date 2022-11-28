@@ -52,7 +52,7 @@ public class PermissionTest {
 		// Path of the excel file
 		final URL resource = ConnectorsTest.class.getResource("/Automation.xlsx");
 		System.out.println(resource);
-		fs = new FileInputStream((resource.toString().substring("file:/".length(), resource.toString().length())));
+		fs = new FileInputStream("/"+(resource.toString().substring("file:/".length(), resource.toString().length())));
 
 		// Creating a workbook
 		XSSFWorkbook workbook = new XSSFWorkbook(fs);

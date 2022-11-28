@@ -9,7 +9,7 @@ import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 
 public class TakeScreenshots {
-	static String FILEPATH = "/var/lib/jenkins/screenshot";
+	static String FILEPATH = "/var/lib/jenkins/workspace/JenkinsTesting/screenshots";
 	public void takeScreenShot(String testName,String className, WebDriver driver) {
 		// TODO Auto-generated method stub
 		File scrFile = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);

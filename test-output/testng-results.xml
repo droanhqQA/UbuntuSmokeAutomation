@@ -1,0 +1,1245 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results retried="1" ignored="12" total="57" passed="44" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2022-11-24T11:32:24 IST" name="Suite" finished-at="2022-11-24T12:33:16 IST" duration-ms="3651687">
+    <groups>
+    </groups>
+    <test started-at="2022-11-24T11:32:24 IST" name="GraphQL" finished-at="2022-11-24T11:35:45 IST" duration-ms="200444">
+      <class name="testcases.ConnectorsTest">
+        <test-method is-config="true" signature="startTest(org.testng.ITestContext)[pri:0, instance:testcases.ConnectorsTest@10d307f1]" started-at="2022-11-24T11:32:24 IST" name="startTest" finished-at="2022-11-24T11:32:24 IST" duration-ms="31" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@4926023f]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startTest -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:testcases.ConnectorsTest@10d307f1]" started-at="2022-11-24T11:32:24 IST" name="setUp" finished-at="2022-11-24T11:32:51 IST" duration-ms="26474" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="connectionTestApi(int, java.lang.String)[pri:0, instance:testcases.ConnectorsTest@10d307f1]" started-at="2022-11-24T11:32:51 IST" name="connectionTestApi" finished-at="2022-11-24T11:32:53 IST" duration-ms="2741" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[5]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[graphql]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- connectionTestApi -->
+        <test-method is-config="true" signature="driverClose(org.testng.ITestResult, org.testng.ITestContext)[pri:0, instance:testcases.ConnectorsTest@10d307f1]" started-at="2022-11-24T11:32:53 IST" name="driverClose" finished-at="2022-11-24T11:32:54 IST" duration-ms="326" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=connectionTestApi status=SUCCESS method=ConnectorsTest.connectionTestApi(int, java.lang.String)[pri:0, instance:testcases.ConnectorsTest@10d307f1] output={null}]]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[org.testng.TestRunner@4926023f]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- driverClose -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:testcases.ConnectorsTest@10d307f1]" started-at="2022-11-24T11:32:54 IST" name="setUp" finished-at="2022-11-24T11:34:07 IST" duration-ms="73703" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="connectionSaveApi(int, java.lang.String)[pri:0, instance:testcases.ConnectorsTest@10d307f1]" started-at="2022-11-24T11:34:07 IST" name="connectionSaveApi" finished-at="2022-11-24T11:34:30 IST" duration-ms="22909" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[5]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[graphql]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- connectionSaveApi -->
+        <test-method is-config="true" signature="driverClose(org.testng.ITestResult, org.testng.ITestContext)[pri:0, instance:testcases.ConnectorsTest@10d307f1]" started-at="2022-11-24T11:34:30 IST" name="driverClose" finished-at="2022-11-24T11:34:31 IST" duration-ms="306" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=connectionSaveApi status=SUCCESS method=ConnectorsTest.connectionSaveApi(int, java.lang.String)[pri:0, instance:testcases.ConnectorsTest@10d307f1] output={null}]]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[org.testng.TestRunner@4926023f]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- driverClose -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:testcases.ConnectorsTest@10d307f1]" started-at="2022-11-24T11:34:31 IST" name="setUp" finished-at="2022-11-24T11:35:41 IST" duration-ms="70351" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="connectionAddApi(int, java.lang.String)[pri:0, instance:testcases.ConnectorsTest@10d307f1]" started-at="2022-11-24T11:35:41 IST" name="connectionAddApi" finished-at="2022-11-24T11:35:44 IST" depends-on-methods="testcases.ConnectorsTest.connectionSaveApi" duration-ms="3105" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[5]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[graphql]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- connectionAddApi -->
+        <test-method is-config="true" signature="driverClose(org.testng.ITestResult, org.testng.ITestContext)[pri:0, instance:testcases.ConnectorsTest@10d307f1]" started-at="2022-11-24T11:35:44 IST" name="driverClose" finished-at="2022-11-24T11:35:45 IST" duration-ms="432" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=connectionAddApi status=SUCCESS method=ConnectorsTest.connectionAddApi(int, java.lang.String)[pri:0, instance:testcases.ConnectorsTest@10d307f1] output={null}]]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[org.testng.TestRunner@4926023f]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- driverClose -->
+      </class> <!-- testcases.ConnectorsTest -->
+    </test> <!-- GraphQL -->
+    <test started-at="2022-11-24T11:35:45 IST" name="RestApi" finished-at="2022-11-24T11:37:21 IST" duration-ms="96670">
+      <class name="testcases.ConnectorsTest">
+        <test-method is-config="true" signature="startTest(org.testng.ITestContext)[pri:0, instance:testcases.ConnectorsTest@22ef9844]" started-at="2022-11-24T11:35:45 IST" name="startTest" finished-at="2022-11-24T11:35:45 IST" duration-ms="2" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@2a157329]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startTest -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:testcases.ConnectorsTest@22ef9844]" started-at="2022-11-24T11:35:45 IST" name="setUp" finished-at="2022-11-24T11:35:59 IST" duration-ms="14432" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="connectionTestApi(int, java.lang.String)[pri:0, instance:testcases.ConnectorsTest@22ef9844]" started-at="2022-11-24T11:35:59 IST" name="connectionTestApi" finished-at="2022-11-24T11:36:03 IST" duration-ms="4139" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[4]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[restapi]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- connectionTestApi -->
+        <test-method is-config="true" signature="driverClose(org.testng.ITestResult, org.testng.ITestContext)[pri:0, instance:testcases.ConnectorsTest@22ef9844]" started-at="2022-11-24T11:36:03 IST" name="driverClose" finished-at="2022-11-24T11:36:04 IST" duration-ms="622" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=connectionTestApi status=SUCCESS method=ConnectorsTest.connectionTestApi(int, java.lang.String)[pri:0, instance:testcases.ConnectorsTest@22ef9844] output={null}]]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[org.testng.TestRunner@2a157329]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- driverClose -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:testcases.ConnectorsTest@22ef9844]" started-at="2022-11-24T11:36:04 IST" name="setUp" finished-at="2022-11-24T11:36:18 IST" duration-ms="14344" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="connectionSaveApi(int, java.lang.String)[pri:0, instance:testcases.ConnectorsTest@22ef9844]" started-at="2022-11-24T11:36:18 IST" name="connectionSaveApi" finished-at="2022-11-24T11:36:43 IST" duration-ms="24556" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[4]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[restapi]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- connectionSaveApi -->
+        <test-method is-config="true" signature="driverClose(org.testng.ITestResult, org.testng.ITestContext)[pri:0, instance:testcases.ConnectorsTest@22ef9844]" started-at="2022-11-24T11:36:43 IST" name="driverClose" finished-at="2022-11-24T11:36:43 IST" duration-ms="496" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=connectionSaveApi status=SUCCESS method=ConnectorsTest.connectionSaveApi(int, java.lang.String)[pri:0, instance:testcases.ConnectorsTest@22ef9844] output={null}]]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[org.testng.TestRunner@2a157329]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- driverClose -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:testcases.ConnectorsTest@22ef9844]" started-at="2022-11-24T11:36:43 IST" name="setUp" finished-at="2022-11-24T11:36:58 IST" duration-ms="15123" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="connectionAddApi(int, java.lang.String)[pri:0, instance:testcases.ConnectorsTest@22ef9844]" started-at="2022-11-24T11:36:58 IST" name="connectionAddApi" finished-at="2022-11-24T11:37:21 IST" depends-on-methods="testcases.ConnectorsTest.connectionSaveApi" duration-ms="22339" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[4]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[restapi]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- connectionAddApi -->
+        <test-method is-config="true" signature="driverClose(org.testng.ITestResult, org.testng.ITestContext)[pri:0, instance:testcases.ConnectorsTest@22ef9844]" started-at="2022-11-24T11:37:21 IST" name="driverClose" finished-at="2022-11-24T11:37:21 IST" duration-ms="602" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=connectionAddApi status=SUCCESS method=ConnectorsTest.connectionAddApi(int, java.lang.String)[pri:0, instance:testcases.ConnectorsTest@22ef9844] output={null}]]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[org.testng.TestRunner@2a157329]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- driverClose -->
+      </class> <!-- testcases.ConnectorsTest -->
+    </test> <!-- RestApi -->
+    <test started-at="2022-11-24T11:37:21 IST" name="mongoDB" finished-at="2022-11-24T11:38:26 IST" duration-ms="64728">
+      <class name="testcases.ConnectorsTest">
+        <test-method is-config="true" signature="startTest(org.testng.ITestContext)[pri:0, instance:testcases.ConnectorsTest@a530d0a]" started-at="2022-11-24T11:37:21 IST" name="startTest" finished-at="2022-11-24T11:37:21 IST" duration-ms="2" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@3b71b6b1]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startTest -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:testcases.ConnectorsTest@a530d0a]" started-at="2022-11-24T11:37:21 IST" name="setUp" finished-at="2022-11-24T11:37:37 IST" duration-ms="15211" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="connectionTest(java.lang.String, java.lang.String)[pri:1, instance:testcases.ConnectorsTest@a530d0a]" started-at="2022-11-24T11:37:37 IST" name="connectionTest" finished-at="2022-11-24T11:37:40 IST" duration-ms="3719" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[1]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[mongo]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- connectionTest -->
+        <test-method is-config="true" signature="driverClose(org.testng.ITestResult, org.testng.ITestContext)[pri:0, instance:testcases.ConnectorsTest@a530d0a]" started-at="2022-11-24T11:37:40 IST" name="driverClose" finished-at="2022-11-24T11:37:41 IST" duration-ms="500" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=connectionTest status=SUCCESS method=ConnectorsTest.connectionTest(java.lang.String, java.lang.String)[pri:1, instance:testcases.ConnectorsTest@a530d0a] output={null}]]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[org.testng.TestRunner@3b71b6b1]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- driverClose -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:testcases.ConnectorsTest@a530d0a]" started-at="2022-11-24T11:37:41 IST" name="setUp" finished-at="2022-11-24T11:37:56 IST" duration-ms="15103" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="saveConnection(java.lang.String, java.lang.String)[pri:2, instance:testcases.ConnectorsTest@a530d0a]" started-at="2022-11-24T11:37:56 IST" name="saveConnection" finished-at="2022-11-24T11:38:01 IST" duration-ms="5140" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[mongo]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[1]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- saveConnection -->
+        <test-method is-config="true" signature="driverClose(org.testng.ITestResult, org.testng.ITestContext)[pri:0, instance:testcases.ConnectorsTest@a530d0a]" started-at="2022-11-24T11:38:01 IST" name="driverClose" finished-at="2022-11-24T11:38:02 IST" duration-ms="466" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=saveConnection status=SUCCESS method=ConnectorsTest.saveConnection(java.lang.String, java.lang.String)[pri:2, instance:testcases.ConnectorsTest@a530d0a] output={null}]]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[org.testng.TestRunner@3b71b6b1]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- driverClose -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:testcases.ConnectorsTest@a530d0a]" started-at="2022-11-24T11:38:02 IST" name="setUp" finished-at="2022-11-24T11:38:20 IST" duration-ms="18532" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="addQuery(java.lang.String, java.lang.String)[pri:3, instance:testcases.ConnectorsTest@a530d0a]" started-at="2022-11-24T11:38:20 IST" name="addQuery" finished-at="2022-11-24T11:38:26 IST" depends-on-methods="testcases.ConnectorsTest.saveConnection" duration-ms="5530" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[mongo]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[1]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addQuery -->
+        <test-method is-config="true" signature="driverClose(org.testng.ITestResult, org.testng.ITestContext)[pri:0, instance:testcases.ConnectorsTest@a530d0a]" started-at="2022-11-24T11:38:26 IST" name="driverClose" finished-at="2022-11-24T11:38:26 IST" duration-ms="500" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=addQuery status=SUCCESS method=ConnectorsTest.addQuery(java.lang.String, java.lang.String)[pri:3, instance:testcases.ConnectorsTest@a530d0a] output={null}]]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[org.testng.TestRunner@3b71b6b1]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- driverClose -->
+      </class> <!-- testcases.ConnectorsTest -->
+    </test> <!-- mongoDB -->
+    <test started-at="2022-11-24T11:38:26 IST" name="postgre" finished-at="2022-11-24T11:39:29 IST" duration-ms="62440">
+      <class name="testcases.ConnectorsTest">
+        <test-method is-config="true" signature="startTest(org.testng.ITestContext)[pri:0, instance:testcases.ConnectorsTest@66d3eec0]" started-at="2022-11-24T11:38:26 IST" name="startTest" finished-at="2022-11-24T11:38:26 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@5cd16573]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startTest -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:testcases.ConnectorsTest@66d3eec0]" started-at="2022-11-24T11:38:26 IST" name="setUp" finished-at="2022-11-24T11:38:42 IST" duration-ms="15878" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="connectionTest(java.lang.String, java.lang.String)[pri:1, instance:testcases.ConnectorsTest@66d3eec0]" started-at="2022-11-24T11:38:42 IST" name="connectionTest" finished-at="2022-11-24T11:38:48 IST" duration-ms="5474" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[2]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[postgre]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- connectionTest -->
+        <test-method is-config="true" signature="driverClose(org.testng.ITestResult, org.testng.ITestContext)[pri:0, instance:testcases.ConnectorsTest@66d3eec0]" started-at="2022-11-24T11:38:48 IST" name="driverClose" finished-at="2022-11-24T11:38:48 IST" duration-ms="400" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=connectionTest status=SUCCESS method=ConnectorsTest.connectionTest(java.lang.String, java.lang.String)[pri:1, instance:testcases.ConnectorsTest@66d3eec0] output={null}]]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[org.testng.TestRunner@5cd16573]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- driverClose -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:testcases.ConnectorsTest@66d3eec0]" started-at="2022-11-24T11:38:48 IST" name="setUp" finished-at="2022-11-24T11:39:03 IST" duration-ms="14794" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="saveConnection(java.lang.String, java.lang.String)[pri:2, instance:testcases.ConnectorsTest@66d3eec0]" started-at="2022-11-24T11:39:03 IST" name="saveConnection" finished-at="2022-11-24T11:39:08 IST" duration-ms="5082" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[postgre]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[2]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- saveConnection -->
+        <test-method is-config="true" signature="driverClose(org.testng.ITestResult, org.testng.ITestContext)[pri:0, instance:testcases.ConnectorsTest@66d3eec0]" started-at="2022-11-24T11:39:08 IST" name="driverClose" finished-at="2022-11-24T11:39:08 IST" duration-ms="499" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=saveConnection status=SUCCESS method=ConnectorsTest.saveConnection(java.lang.String, java.lang.String)[pri:2, instance:testcases.ConnectorsTest@66d3eec0] output={null}]]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[org.testng.TestRunner@5cd16573]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- driverClose -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:testcases.ConnectorsTest@66d3eec0]" started-at="2022-11-24T11:39:08 IST" name="setUp" finished-at="2022-11-24T11:39:23 IST" duration-ms="14861" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="addQuery(java.lang.String, java.lang.String)[pri:3, instance:testcases.ConnectorsTest@66d3eec0]" started-at="2022-11-24T11:39:23 IST" name="addQuery" finished-at="2022-11-24T11:39:28 IST" depends-on-methods="testcases.ConnectorsTest.saveConnection" duration-ms="4961" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[postgre]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[2]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addQuery -->
+        <test-method is-config="true" signature="driverClose(org.testng.ITestResult, org.testng.ITestContext)[pri:0, instance:testcases.ConnectorsTest@66d3eec0]" started-at="2022-11-24T11:39:28 IST" name="driverClose" finished-at="2022-11-24T11:39:29 IST" duration-ms="479" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=addQuery status=SUCCESS method=ConnectorsTest.addQuery(java.lang.String, java.lang.String)[pri:3, instance:testcases.ConnectorsTest@66d3eec0] output={null}]]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[org.testng.TestRunner@5cd16573]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- driverClose -->
+      </class> <!-- testcases.ConnectorsTest -->
+    </test> <!-- postgre -->
+    <test started-at="2022-11-24T11:39:29 IST" name="HeadFullTestcases" finished-at="2022-11-24T11:41:54 IST" duration-ms="145768">
+      <class name="testcases.HeadFullTestCases">
+        <test-method is-config="true" signature="startTest(org.testng.ITestContext)[pri:0, instance:testcases.HeadFullTestCases@2c35e847]" started-at="2022-11-24T11:39:29 IST" name="startTest" finished-at="2022-11-24T11:39:29 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@251fa32c]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startTest -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:testcases.HeadFullTestCases@2c35e847]" started-at="2022-11-24T11:39:29 IST" name="setUp" finished-at="2022-11-24T11:39:44 IST" duration-ms="15415" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="checkApiOAuth2()[pri:0, instance:testcases.HeadFullTestCases@2c35e847]" started-at="2022-11-24T11:39:44 IST" name="checkApiOAuth2" finished-at="2022-11-24T11:40:48 IST" duration-ms="64067" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkApiOAuth2 -->
+        <test-method is-config="true" signature="driverClose(org.testng.ITestResult, org.testng.ITestContext)[pri:0, instance:testcases.HeadFullTestCases@2c35e847]" started-at="2022-11-24T11:40:48 IST" name="driverClose" finished-at="2022-11-24T11:40:49 IST" duration-ms="440" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=checkApiOAuth2 status=SUCCESS method=HeadFullTestCases.checkApiOAuth2()[pri:0, instance:testcases.HeadFullTestCases@2c35e847] output={null}]]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[org.testng.TestRunner@251fa32c]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- driverClose -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:testcases.HeadFullTestCases@2c35e847]" started-at="2022-11-24T11:40:49 IST" name="setUp" finished-at="2022-11-24T11:41:03 IST" duration-ms="14876" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="checkApiOAuth1()[pri:0, instance:testcases.HeadFullTestCases@2c35e847]" started-at="2022-11-24T11:41:03 IST" name="checkApiOAuth1" finished-at="2022-11-24T11:41:54 IST" duration-ms="50522" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkApiOAuth1 -->
+        <test-method is-config="true" signature="driverClose(org.testng.ITestResult, org.testng.ITestContext)[pri:0, instance:testcases.HeadFullTestCases@2c35e847]" started-at="2022-11-24T11:41:54 IST" name="driverClose" finished-at="2022-11-24T11:41:54 IST" duration-ms="441" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=checkApiOAuth1 status=SUCCESS method=HeadFullTestCases.checkApiOAuth1()[pri:0, instance:testcases.HeadFullTestCases@2c35e847] output={null}]]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[org.testng.TestRunner@251fa32c]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- driverClose -->
+      </class> <!-- testcases.HeadFullTestCases -->
+    </test> <!-- HeadFullTestcases -->
+    <test started-at="2022-11-24T11:41:54 IST" name="ApplicationTest" finished-at="2022-11-24T12:19:35 IST" duration-ms="2260870">
+      <class name="testcases.ApplicationTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:testcases.ApplicationTest@4803b726]" started-at="2022-11-24T11:41:54 IST" name="setUp" finished-at="2022-11-24T11:41:59 IST" duration-ms="4174" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="createApp()[pri:1, instance:testcases.ApplicationTest@4803b726]" started-at="2022-11-24T11:41:59 IST" name="createApp" finished-at="2022-11-24T11:43:01 IST" duration-ms="62443" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createApp -->
+        <test-method is-config="true" signature="closeBrowser(org.testng.ITestResult)[pri:0, instance:testcases.ApplicationTest@4803b726]" started-at="2022-11-24T11:43:01 IST" name="closeBrowser" finished-at="2022-11-24T11:43:02 IST" duration-ms="534" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=createApp status=SUCCESS method=ApplicationTest.createApp()[pri:1, instance:testcases.ApplicationTest@4803b726] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:testcases.ApplicationTest@4803b726]" started-at="2022-11-24T11:43:02 IST" name="setUp" finished-at="2022-11-24T11:43:07 IST" duration-ms="5751" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="addControls()[pri:2, instance:testcases.ApplicationTest@4803b726]" started-at="2022-11-24T11:43:07 IST" name="addControls" finished-at="2022-11-24T11:46:05 IST" depends-on-methods="testcases.ApplicationTest.createApp" duration-ms="178098" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addControls -->
+        <test-method is-config="true" signature="closeBrowser(org.testng.ITestResult)[pri:0, instance:testcases.ApplicationTest@4803b726]" started-at="2022-11-24T11:46:05 IST" name="closeBrowser" finished-at="2022-11-24T11:46:06 IST" duration-ms="495" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=addControls status=SUCCESS method=ApplicationTest.addControls()[pri:2, instance:testcases.ApplicationTest@4803b726] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:testcases.ApplicationTest@4803b726]" started-at="2022-11-24T11:46:06 IST" name="setUp" finished-at="2022-11-24T11:46:10 IST" duration-ms="4091" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="addMongoConnector()[pri:3, instance:testcases.ApplicationTest@4803b726]" started-at="2022-11-24T11:46:10 IST" name="addMongoConnector" finished-at="2022-11-24T11:47:58 IST" depends-on-methods="testcases.ApplicationTest.addControls" duration-ms="108146" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addMongoConnector -->
+        <test-method is-config="true" signature="closeBrowser(org.testng.ITestResult)[pri:0, instance:testcases.ApplicationTest@4803b726]" started-at="2022-11-24T11:47:58 IST" name="closeBrowser" finished-at="2022-11-24T11:47:59 IST" duration-ms="445" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=addMongoConnector status=SUCCESS method=ApplicationTest.addMongoConnector()[pri:3, instance:testcases.ApplicationTest@4803b726] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:testcases.ApplicationTest@4803b726]" started-at="2022-11-24T11:47:59 IST" name="setUp" finished-at="2022-11-24T11:48:03 IST" duration-ms="4312" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="addPostgreConnector()[pri:4, instance:testcases.ApplicationTest@4803b726]" started-at="2022-11-24T11:48:03 IST" name="addPostgreConnector" finished-at="2022-11-24T11:51:01 IST" depends-on-methods="testcases.ApplicationTest.addControls" duration-ms="177785" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addPostgreConnector -->
+        <test-method is-config="true" signature="closeBrowser(org.testng.ITestResult)[pri:0, instance:testcases.ApplicationTest@4803b726]" started-at="2022-11-24T11:51:01 IST" name="closeBrowser" finished-at="2022-11-24T11:51:01 IST" duration-ms="624" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=addPostgreConnector status=SUCCESS method=ApplicationTest.addPostgreConnector()[pri:4, instance:testcases.ApplicationTest@4803b726] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:testcases.ApplicationTest@4803b726]" started-at="2022-11-24T11:51:01 IST" name="setUp" finished-at="2022-11-24T11:51:05 IST" duration-ms="3725" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="addAutoApi()[pri:5, instance:testcases.ApplicationTest@4803b726]" started-at="2022-11-24T11:51:05 IST" name="addAutoApi" finished-at="2022-11-24T11:54:03 IST" depends-on-methods="testcases.ApplicationTest.addControls" duration-ms="177577" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addAutoApi -->
+        <test-method is-config="true" signature="closeBrowser(org.testng.ITestResult)[pri:0, instance:testcases.ApplicationTest@4803b726]" started-at="2022-11-24T11:54:03 IST" name="closeBrowser" finished-at="2022-11-24T11:54:03 IST" duration-ms="431" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=addAutoApi status=SUCCESS method=ApplicationTest.addAutoApi()[pri:5, instance:testcases.ApplicationTest@4803b726] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:testcases.ApplicationTest@4803b726]" started-at="2022-11-24T11:54:03 IST" name="setUp" finished-at="2022-11-24T11:54:07 IST" duration-ms="3908" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="addGraphQL()[pri:6, instance:testcases.ApplicationTest@4803b726]" started-at="2022-11-24T11:54:07 IST" name="addGraphQL" finished-at="2022-11-24T11:57:04 IST" depends-on-methods="testcases.ApplicationTest.addControls" duration-ms="177460" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addGraphQL -->
+        <test-method is-config="true" signature="closeBrowser(org.testng.ITestResult)[pri:0, instance:testcases.ApplicationTest@4803b726]" started-at="2022-11-24T11:57:04 IST" name="closeBrowser" finished-at="2022-11-24T11:57:05 IST" duration-ms="456" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=addGraphQL status=SUCCESS method=ApplicationTest.addGraphQL()[pri:6, instance:testcases.ApplicationTest@4803b726] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:testcases.ApplicationTest@4803b726]" started-at="2022-11-24T11:57:05 IST" name="setUp" finished-at="2022-11-24T11:57:09 IST" duration-ms="4443" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="CheckPreview()[pri:7, instance:testcases.ApplicationTest@4803b726]" started-at="2022-11-24T11:57:09 IST" name="CheckPreview" finished-at="2022-11-24T11:59:20 IST" duration-ms="131031" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CheckPreview -->
+        <test-method is-config="true" signature="closeBrowser(org.testng.ITestResult)[pri:0, instance:testcases.ApplicationTest@4803b726]" started-at="2022-11-24T11:59:20 IST" name="closeBrowser" finished-at="2022-11-24T11:59:21 IST" duration-ms="378" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=CheckPreview status=SUCCESS method=ApplicationTest.CheckPreview()[pri:7, instance:testcases.ApplicationTest@4803b726] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:testcases.ApplicationTest@4803b726]" started-at="2022-11-24T11:59:21 IST" name="setUp" finished-at="2022-11-24T11:59:25 IST" duration-ms="4125" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="CheckPublish()[pri:8, instance:testcases.ApplicationTest@4803b726]" started-at="2022-11-24T11:59:25 IST" name="CheckPublish" finished-at="2022-11-24T12:01:37 IST" duration-ms="131974" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CheckPublish -->
+        <test-method is-config="true" signature="closeBrowser(org.testng.ITestResult)[pri:0, instance:testcases.ApplicationTest@4803b726]" started-at="2022-11-24T12:01:37 IST" name="closeBrowser" finished-at="2022-11-24T12:01:37 IST" duration-ms="495" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=CheckPublish status=SUCCESS method=ApplicationTest.CheckPublish()[pri:8, instance:testcases.ApplicationTest@4803b726] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:testcases.ApplicationTest@4803b726]" started-at="2022-11-24T12:01:37 IST" name="setUp" finished-at="2022-11-24T12:01:43 IST" duration-ms="5403" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="CheckAppImport()[pri:9, instance:testcases.ApplicationTest@4803b726]" started-at="2022-11-24T12:01:43 IST" name="CheckAppImport" finished-at="2022-11-24T12:03:02 IST" duration-ms="79458" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CheckAppImport -->
+        <test-method is-config="true" signature="closeBrowser(org.testng.ITestResult)[pri:0, instance:testcases.ApplicationTest@4803b726]" started-at="2022-11-24T12:03:02 IST" name="closeBrowser" finished-at="2022-11-24T12:03:03 IST" duration-ms="364" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=CheckAppImport status=SUCCESS method=ApplicationTest.CheckAppImport()[pri:9, instance:testcases.ApplicationTest@4803b726] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:testcases.ApplicationTest@4803b726]" started-at="2022-11-24T12:03:03 IST" name="setUp" finished-at="2022-11-24T12:03:07 IST" duration-ms="4062" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="checkGitAppImport()[pri:10, instance:testcases.ApplicationTest@4803b726]" started-at="2022-11-24T12:03:07 IST" name="checkGitAppImport" finished-at="2022-11-24T12:04:24 IST" duration-ms="77301" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkGitAppImport -->
+        <test-method is-config="true" signature="closeBrowser(org.testng.ITestResult)[pri:0, instance:testcases.ApplicationTest@4803b726]" started-at="2022-11-24T12:04:24 IST" name="closeBrowser" finished-at="2022-11-24T12:04:24 IST" duration-ms="441" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=checkGitAppImport status=SUCCESS method=ApplicationTest.checkGitAppImport()[pri:10, instance:testcases.ApplicationTest@4803b726] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:testcases.ApplicationTest@4803b726]" started-at="2022-11-24T12:04:24 IST" name="setUp" finished-at="2022-11-24T12:04:28 IST" duration-ms="3826" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="addCheckSSHKey()[pri:11, instance:testcases.ApplicationTest@4803b726]" started-at="2022-11-24T12:04:28 IST" name="addCheckSSHKey" finished-at="2022-11-24T12:04:38 IST" duration-ms="9259" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addCheckSSHKey -->
+        <test-method is-config="true" signature="closeBrowser(org.testng.ITestResult)[pri:0, instance:testcases.ApplicationTest@4803b726]" started-at="2022-11-24T12:04:38 IST" name="closeBrowser" finished-at="2022-11-24T12:04:38 IST" duration-ms="504" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=addCheckSSHKey status=SUCCESS method=ApplicationTest.addCheckSSHKey()[pri:11, instance:testcases.ApplicationTest@4803b726] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:testcases.ApplicationTest@4803b726]" started-at="2022-11-24T12:04:38 IST" name="setUp" finished-at="2022-11-24T12:04:42 IST" duration-ms="3962" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="checkGitPush()[pri:0, instance:testcases.ApplicationTest@4803b726]" started-at="2022-11-24T12:04:42 IST" name="checkGitPush" finished-at="2022-11-24T12:06:43 IST" depends-on-methods="testcases.ApplicationTest.addCheckSSHKey" duration-ms="121517" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkGitPush -->
+        <test-method is-config="true" signature="closeBrowser(org.testng.ITestResult)[pri:0, instance:testcases.ApplicationTest@4803b726]" started-at="2022-11-24T12:06:43 IST" name="closeBrowser" finished-at="2022-11-24T12:06:44 IST" duration-ms="424" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=checkGitPush status=SUCCESS method=ApplicationTest.checkGitPush()[pri:0, instance:testcases.ApplicationTest@4803b726] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:testcases.ApplicationTest@4803b726]" started-at="2022-11-24T12:06:44 IST" name="setUp" finished-at="2022-11-24T12:06:48 IST" duration-ms="3680" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="checkGitPull()[pri:0, instance:testcases.ApplicationTest@4803b726]" started-at="2022-11-24T12:06:48 IST" name="checkGitPull" finished-at="2022-11-24T12:08:46 IST" depends-on-methods="testcases.ApplicationTest.checkGitPush" duration-ms="118080" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkGitPull -->
+        <test-method is-config="true" signature="closeBrowser(org.testng.ITestResult)[pri:0, instance:testcases.ApplicationTest@4803b726]" started-at="2022-11-24T12:08:46 IST" name="closeBrowser" finished-at="2022-11-24T12:08:46 IST" duration-ms="361" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=checkGitPull status=SUCCESS method=ApplicationTest.checkGitPull()[pri:0, instance:testcases.ApplicationTest@4803b726] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:testcases.ApplicationTest@4803b726]" started-at="2022-11-24T12:08:46 IST" name="setUp" finished-at="2022-11-24T12:08:50 IST" duration-ms="3769" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="checkUpdateAppJson()[pri:12, instance:testcases.ApplicationTest@4803b726]" started-at="2022-11-24T12:08:50 IST" name="checkUpdateAppJson" finished-at="2022-11-24T12:10:00 IST" duration-ms="70402" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkUpdateAppJson -->
+        <test-method is-config="true" signature="closeBrowser(org.testng.ITestResult)[pri:0, instance:testcases.ApplicationTest@4803b726]" started-at="2022-11-24T12:10:00 IST" name="closeBrowser" finished-at="2022-11-24T12:10:01 IST" duration-ms="374" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=checkUpdateAppJson status=SUCCESS method=ApplicationTest.checkUpdateAppJson()[pri:12, instance:testcases.ApplicationTest@4803b726] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:testcases.ApplicationTest@4803b726]" started-at="2022-11-24T12:10:01 IST" name="setUp" finished-at="2022-11-24T12:10:04 IST" duration-ms="3741" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method retried="true" signature="checkUpdateAppGit()[pri:0, instance:testcases.ApplicationTest@4803b726]" started-at="2022-11-24T12:10:04 IST" name="checkUpdateAppGit" finished-at="2022-11-24T12:10:39 IST" depends-on-methods="testcases.ApplicationTest.checkUpdateAppJson" duration-ms="34547" status="SKIP">
+          <exception class="org.openqa.selenium.ElementClickInterceptedException">
+            <message>
+              <![CDATA[element click intercepted: Element <div class="event-button-click" style="background: rgb(32, 212, 114);">...</div> is not clickable at point (666, 337). Other element would receive the click: <div class="event-button">...</div>
+  (Session info: chrome=107.0.5304.107)
+Build info: version: '4.1.2', revision: '9a5a329c5a'
+System info: host: 'DESKTOP-2SJV0LG', ip: '192.168.1.7', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.4.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [1850651ed3e6372c171208fabf42af5d, clickElement {id=698f1ec5-a187-4d9a-a8f4-c4d55feaa420}]
+Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 107.0.5304.107, chrome: {chromedriverVersion: 106.0.5249.61 (511755355844..., userDataDir: C:\Users\popst\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:53703}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:53703/devtoo..., se:cdpVersion: 107.0.5304.107, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (1850651ed3e6372c171208fabf42af5d)] -> xpath: //div[@class='event-button']/div]
+Session ID: 1850651ed3e6372c171208fabf42af5d]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <div class="event-button-click" style="background: rgb(32, 212, 114);">...</div> is not clickable at point (666, 337). Other element would receive the click: <div class="event-button">...</div>
+  (Session info: chrome=107.0.5304.107)
+Build info: version: '4.1.2', revision: '9a5a329c5a'
+System info: host: 'DESKTOP-2SJV0LG', ip: '192.168.1.7', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.4.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [1850651ed3e6372c171208fabf42af5d, clickElement {id=698f1ec5-a187-4d9a-a8f4-c4d55feaa420}]
+Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 107.0.5304.107, chrome: {chromedriverVersion: 106.0.5249.61 (511755355844..., userDataDir: C:\Users\popst\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:53703}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:53703/devtoo..., se:cdpVersion: 107.0.5304.107, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (1850651ed3e6372c171208fabf42af5d)] -> xpath: //div[@class='event-button']/div]
+Session ID: 1850651ed3e6372c171208fabf42af5d
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:558)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:251)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
+at com.applications.AppsNavFunc.gitAppUpdate(AppsNavFunc.java:853)
+at testcases.ApplicationTest.checkUpdateAppGit(ApplicationTest.java:266)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:599)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:764)
+at org.testng.TestRunner.run(TestRunner.java:585)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+at org.testng.TestNG.runSuites(TestNG.java:1069)
+at org.testng.TestNG.run(TestNG.java:1037)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.ElementClickInterceptedException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkUpdateAppGit -->
+        <test-method is-config="true" signature="closeBrowser(org.testng.ITestResult)[pri:0, instance:testcases.ApplicationTest@4803b726]" started-at="2022-11-24T12:10:39 IST" name="closeBrowser" finished-at="2022-11-24T12:10:39 IST" duration-ms="247" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=checkUpdateAppGit status=SKIP method=ApplicationTest.checkUpdateAppGit()[pri:0, instance:testcases.ApplicationTest@4803b726] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:testcases.ApplicationTest@4803b726]" started-at="2022-11-24T12:10:39 IST" name="setUp" finished-at="2022-11-24T12:10:43 IST" duration-ms="3832" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="checkUpdateAppGit()[pri:0, instance:testcases.ApplicationTest@4803b726]" started-at="2022-11-24T12:10:43 IST" name="checkUpdateAppGit" finished-at="2022-11-24T12:12:17 IST" depends-on-methods="testcases.ApplicationTest.checkUpdateAppJson" duration-ms="93792" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkUpdateAppGit -->
+        <test-method is-config="true" signature="closeBrowser(org.testng.ITestResult)[pri:0, instance:testcases.ApplicationTest@4803b726]" started-at="2022-11-24T12:12:17 IST" name="closeBrowser" finished-at="2022-11-24T12:12:17 IST" duration-ms="359" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=checkUpdateAppGit status=SUCCESS method=ApplicationTest.checkUpdateAppGit()[pri:0, instance:testcases.ApplicationTest@4803b726] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:testcases.ApplicationTest@4803b726]" started-at="2022-11-24T12:12:17 IST" name="setUp" finished-at="2022-11-24T12:12:21 IST" duration-ms="3848" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="checkAppExport()[pri:13, instance:testcases.ApplicationTest@4803b726]" started-at="2022-11-24T12:12:21 IST" name="checkAppExport" finished-at="2022-11-24T12:14:07 IST" duration-ms="106044" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkAppExport -->
+        <test-method is-config="true" signature="closeBrowser(org.testng.ITestResult)[pri:0, instance:testcases.ApplicationTest@4803b726]" started-at="2022-11-24T12:14:07 IST" name="closeBrowser" finished-at="2022-11-24T12:14:08 IST" duration-ms="497" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=checkAppExport status=SUCCESS method=ApplicationTest.checkAppExport()[pri:13, instance:testcases.ApplicationTest@4803b726] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:testcases.ApplicationTest@4803b726]" started-at="2022-11-24T12:14:08 IST" name="setUp" finished-at="2022-11-24T12:14:11 IST" duration-ms="3981" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="checkAPicall()[pri:14, instance:testcases.ApplicationTest@4803b726]" started-at="2022-11-24T12:14:11 IST" name="checkAPicall" finished-at="2022-11-24T12:16:51 IST" duration-ms="159788" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkAPicall -->
+        <test-method is-config="true" signature="closeBrowser(org.testng.ITestResult)[pri:0, instance:testcases.ApplicationTest@4803b726]" started-at="2022-11-24T12:16:51 IST" name="closeBrowser" finished-at="2022-11-24T12:16:52 IST" duration-ms="551" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=checkAPicall status=SUCCESS method=ApplicationTest.checkAPicall()[pri:14, instance:testcases.ApplicationTest@4803b726] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:testcases.ApplicationTest@4803b726]" started-at="2022-11-24T12:16:52 IST" name="setUp" finished-at="2022-11-24T12:16:56 IST" duration-ms="3789" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="checkApiCallOAuth1()[pri:15, instance:testcases.ApplicationTest@4803b726]" started-at="2022-11-24T12:16:56 IST" name="checkApiCallOAuth1" finished-at="2022-11-24T12:19:35 IST" duration-ms="159192" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkApiCallOAuth1 -->
+        <test-method is-config="true" signature="closeBrowser(org.testng.ITestResult)[pri:0, instance:testcases.ApplicationTest@4803b726]" started-at="2022-11-24T12:19:35 IST" name="closeBrowser" finished-at="2022-11-24T12:19:35 IST" duration-ms="522" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=checkApiCallOAuth1 status=SUCCESS method=ApplicationTest.checkApiCallOAuth1()[pri:15, instance:testcases.ApplicationTest@4803b726] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- testcases.ApplicationTest -->
+    </test> <!-- ApplicationTest -->
+    <test started-at="2022-11-24T12:19:35 IST" name="AddUserTest" finished-at="2022-11-24T12:21:04 IST" duration-ms="88952">
+      <class name="testcases.AddUserTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:testcases.AddUserTest@66f57048]" started-at="2022-11-24T12:19:35 IST" name="setUp" finished-at="2022-11-24T12:19:40 IST" duration-ms="4300" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="AddUser()[pri:0, instance:testcases.AddUserTest@66f57048]" started-at="2022-11-24T12:19:40 IST" name="AddUser" finished-at="2022-11-24T12:20:25 IST" duration-ms="45654" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AddUser -->
+        <test-method is-config="true" signature="closeBrowser(org.testng.ITestResult)[pri:0, instance:testcases.AddUserTest@66f57048]" started-at="2022-11-24T12:20:25 IST" name="closeBrowser" finished-at="2022-11-24T12:20:26 IST" duration-ms="498" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=AddUser status=SUCCESS method=AddUserTest.AddUser()[pri:0, instance:testcases.AddUserTest@66f57048] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:testcases.AddUserTest@66f57048]" started-at="2022-11-24T12:20:26 IST" name="setUp" finished-at="2022-11-24T12:20:32 IST" duration-ms="6414" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="LoginUser()[pri:0, instance:testcases.AddUserTest@66f57048]" started-at="2022-11-24T12:20:32 IST" name="LoginUser" finished-at="2022-11-24T12:21:04 IST" depends-on-methods="testcases.AddUserTest.AddUser" duration-ms="31505" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LoginUser -->
+        <test-method is-config="true" signature="closeBrowser(org.testng.ITestResult)[pri:0, instance:testcases.AddUserTest@66f57048]" started-at="2022-11-24T12:21:04 IST" name="closeBrowser" finished-at="2022-11-24T12:21:04 IST" duration-ms="571" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=LoginUser status=SUCCESS method=AddUserTest.LoginUser()[pri:0, instance:testcases.AddUserTest@66f57048] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- testcases.AddUserTest -->
+    </test> <!-- AddUserTest -->
+    <test started-at="2022-11-24T12:21:04 IST" name="PermissionTest" finished-at="2022-11-24T12:33:16 IST" duration-ms="731429">
+      <class name="testcases.PermissionTest">
+        <test-method is-config="true" signature="startTest(org.testng.ITestContext)[pri:0, instance:testcases.PermissionTest@51e69659]" started-at="2022-11-24T12:21:04 IST" name="startTest" finished-at="2022-11-24T12:21:04 IST" duration-ms="2" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@2412009d]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startTest -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:testcases.PermissionTest@51e69659]" started-at="2022-11-24T12:21:04 IST" name="setUp" finished-at="2022-11-24T12:21:13 IST" duration-ms="8326" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testGroupConnUseonly()[pri:0, instance:testcases.PermissionTest@51e69659]" started-at="2022-11-24T12:21:13 IST" name="testGroupConnUseonly" finished-at="2022-11-24T12:23:00 IST" duration-ms="107121" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testGroupConnUseonly -->
+        <test-method is-config="true" signature="closeBrowser(org.testng.ITestResult)[pri:0, instance:testcases.PermissionTest@51e69659]" started-at="2022-11-24T12:23:00 IST" name="closeBrowser" finished-at="2022-11-24T12:23:00 IST" duration-ms="431" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testGroupConnUseonly status=SUCCESS method=PermissionTest.testGroupConnUseonly()[pri:0, instance:testcases.PermissionTest@51e69659] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:testcases.PermissionTest@51e69659]" started-at="2022-11-24T12:23:00 IST" name="setUp" finished-at="2022-11-24T12:23:06 IST" duration-ms="5646" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testGroupConnNone()[pri:0, instance:testcases.PermissionTest@51e69659]" started-at="2022-11-24T12:23:06 IST" name="testGroupConnNone" finished-at="2022-11-24T12:23:53 IST" depends-on-methods="testcases.PermissionTest.testGroupConnUseonly" duration-ms="46812" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testGroupConnNone -->
+        <test-method is-config="true" signature="closeBrowser(org.testng.ITestResult)[pri:0, instance:testcases.PermissionTest@51e69659]" started-at="2022-11-24T12:23:53 IST" name="closeBrowser" finished-at="2022-11-24T12:23:53 IST" duration-ms="371" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testGroupConnNone status=SUCCESS method=PermissionTest.testGroupConnNone()[pri:0, instance:testcases.PermissionTest@51e69659] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:testcases.PermissionTest@51e69659]" started-at="2022-11-24T12:23:53 IST" name="setUp" finished-at="2022-11-24T12:23:58 IST" duration-ms="5432" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testConnUseOnly()[pri:0, instance:testcases.PermissionTest@51e69659]" started-at="2022-11-24T12:23:58 IST" name="testConnUseOnly" finished-at="2022-11-24T12:24:42 IST" depends-on-methods="testcases.PermissionTest.testGroupConnNone" duration-ms="43997" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testConnUseOnly -->
+        <test-method is-config="true" signature="closeBrowser(org.testng.ITestResult)[pri:0, instance:testcases.PermissionTest@51e69659]" started-at="2022-11-24T12:24:42 IST" name="closeBrowser" finished-at="2022-11-24T12:24:43 IST" duration-ms="384" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testConnUseOnly status=SUCCESS method=PermissionTest.testConnUseOnly()[pri:0, instance:testcases.PermissionTest@51e69659] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:testcases.PermissionTest@51e69659]" started-at="2022-11-24T12:24:43 IST" name="setUp" finished-at="2022-11-24T12:24:48 IST" duration-ms="5555" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testConnNone()[pri:0, instance:testcases.PermissionTest@51e69659]" started-at="2022-11-24T12:24:48 IST" name="testConnNone" finished-at="2022-11-24T12:25:32 IST" depends-on-methods="testcases.PermissionTest.testConnUseOnly" duration-ms="43477" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testConnNone -->
+        <test-method is-config="true" signature="closeBrowser(org.testng.ITestResult)[pri:0, instance:testcases.PermissionTest@51e69659]" started-at="2022-11-24T12:25:32 IST" name="closeBrowser" finished-at="2022-11-24T12:25:32 IST" duration-ms="322" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testConnNone status=SUCCESS method=PermissionTest.testConnNone()[pri:0, instance:testcases.PermissionTest@51e69659] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:testcases.PermissionTest@51e69659]" started-at="2022-11-24T12:25:32 IST" name="setUp" finished-at="2022-11-24T12:25:38 IST" duration-ms="5495" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testGroupEditorPrem()[pri:1, instance:testcases.PermissionTest@51e69659]" started-at="2022-11-24T12:25:38 IST" name="testGroupEditorPrem" finished-at="2022-11-24T12:27:55 IST" duration-ms="137485" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testGroupEditorPrem -->
+        <test-method is-config="true" signature="closeBrowser(org.testng.ITestResult)[pri:0, instance:testcases.PermissionTest@51e69659]" started-at="2022-11-24T12:27:55 IST" name="closeBrowser" finished-at="2022-11-24T12:27:56 IST" duration-ms="363" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testGroupEditorPrem status=SUCCESS method=PermissionTest.testGroupEditorPrem()[pri:1, instance:testcases.PermissionTest@51e69659] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:testcases.PermissionTest@51e69659]" started-at="2022-11-24T12:27:56 IST" name="setUp" finished-at="2022-11-24T12:28:02 IST" duration-ms="6082" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testGroupPreviewPrem()[pri:2, instance:testcases.PermissionTest@51e69659]" started-at="2022-11-24T12:28:02 IST" name="testGroupPreviewPrem" finished-at="2022-11-24T12:29:20 IST" duration-ms="78093" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testGroupPreviewPrem -->
+        <test-method is-config="true" signature="closeBrowser(org.testng.ITestResult)[pri:0, instance:testcases.PermissionTest@51e69659]" started-at="2022-11-24T12:29:20 IST" name="closeBrowser" finished-at="2022-11-24T12:29:20 IST" duration-ms="444" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testGroupPreviewPrem status=SUCCESS method=PermissionTest.testGroupPreviewPrem()[pri:2, instance:testcases.PermissionTest@51e69659] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:testcases.PermissionTest@51e69659]" started-at="2022-11-24T12:29:20 IST" name="setUp" finished-at="2022-11-24T12:29:26 IST" duration-ms="5722" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testGroupNonePrem()[pri:3, instance:testcases.PermissionTest@51e69659]" started-at="2022-11-24T12:29:26 IST" name="testGroupNonePrem" finished-at="2022-11-24T12:29:42 IST" duration-ms="16181" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testGroupNonePrem -->
+        <test-method is-config="true" signature="closeBrowser(org.testng.ITestResult)[pri:0, instance:testcases.PermissionTest@51e69659]" started-at="2022-11-24T12:29:42 IST" name="closeBrowser" finished-at="2022-11-24T12:29:42 IST" duration-ms="360" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testGroupNonePrem status=SUCCESS method=PermissionTest.testGroupNonePrem()[pri:3, instance:testcases.PermissionTest@51e69659] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:testcases.PermissionTest@51e69659]" started-at="2022-11-24T12:29:42 IST" name="setUp" finished-at="2022-11-24T12:29:48 IST" duration-ms="5496" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testNone()[pri:4, instance:testcases.PermissionTest@51e69659]" started-at="2022-11-24T12:29:48 IST" name="testNone" finished-at="2022-11-24T12:30:36 IST" duration-ms="48067" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testNone -->
+        <test-method is-config="true" signature="closeBrowser(org.testng.ITestResult)[pri:0, instance:testcases.PermissionTest@51e69659]" started-at="2022-11-24T12:30:36 IST" name="closeBrowser" finished-at="2022-11-24T12:30:36 IST" duration-ms="303" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testNone status=SUCCESS method=PermissionTest.testNone()[pri:4, instance:testcases.PermissionTest@51e69659] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:testcases.PermissionTest@51e69659]" started-at="2022-11-24T12:30:36 IST" name="setUp" finished-at="2022-11-24T12:30:42 IST" duration-ms="5545" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testPreviewOnly()[pri:5, instance:testcases.PermissionTest@51e69659]" started-at="2022-11-24T12:30:42 IST" name="testPreviewOnly" finished-at="2022-11-24T12:31:56 IST" duration-ms="73969" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testPreviewOnly -->
+        <test-method is-config="true" signature="closeBrowser(org.testng.ITestResult)[pri:0, instance:testcases.PermissionTest@51e69659]" started-at="2022-11-24T12:31:56 IST" name="closeBrowser" finished-at="2022-11-24T12:31:56 IST" duration-ms="322" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testPreviewOnly status=SUCCESS method=PermissionTest.testPreviewOnly()[pri:5, instance:testcases.PermissionTest@51e69659] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:testcases.PermissionTest@51e69659]" started-at="2022-11-24T12:31:56 IST" name="setUp" finished-at="2022-11-24T12:32:02 IST" duration-ms="5756" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testEditor()[pri:6, instance:testcases.PermissionTest@51e69659]" started-at="2022-11-24T12:32:02 IST" name="testEditor" finished-at="2022-11-24T12:33:15 IST" duration-ms="73475" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testEditor -->
+        <test-method is-config="true" signature="closeBrowser(org.testng.ITestResult)[pri:0, instance:testcases.PermissionTest@51e69659]" started-at="2022-11-24T12:33:15 IST" name="closeBrowser" finished-at="2022-11-24T12:33:16 IST" duration-ms="374" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testEditor status=SUCCESS method=PermissionTest.testEditor()[pri:6, instance:testcases.PermissionTest@51e69659] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- testcases.PermissionTest -->
+    </test> <!-- PermissionTest -->
+  </suite> <!-- Suite -->
+</testng-results>

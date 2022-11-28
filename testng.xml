@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+
+	<test name="GraphQL">
+		<parameter name="connectionString" value="N" />
+		<parameter name="sheet" value="5" />
+		<parameter name="db" value="graphql" />
+		<classes>
+			<class name="testcases.ConnectorsTest">
+				<methods>
+					<include name="connectionTestApi" />
+					<include name="connectionSaveApi" />
+					<include name="connectionAddApi" />
+
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test name="RestApi">
+		<parameter name="connectionString" value="N" />
+		<parameter name="sheet" value="4" />
+		<parameter name="db" value="restapi" />
+		<classes>
+			<class name="testcases.ConnectorsTest">
+				<methods>
+					<include name="connectionTestApi" />
+					<include name="connectionSaveApi" />
+					<include name="connectionAddApi" />
+
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+	<test name="mongoDB">
+		<parameter name="connectionString" value="N" />
+		<parameter name="sheet" value="1" />
+		<parameter name="db" value="mongo" />
+		<classes>
+
+			<class name="testcases.ConnectorsTest">
+				<methods>
+					<include name="saveConnection" />
+					<include name="connectionTest" />
+					<include name="addQuery" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test name="postgre">
+		<parameter name="connectionString" value="Y" />
+		<parameter name="sheet" value="2" />
+		<parameter name="db" value="postgre" />
+		<classes>
+			<class name="testcases.ConnectorsTest">
+				<methods>
+					<include name="saveConnection" />
+					<include name="connectionTest" />
+					<include name="addQuery" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+
+
+
+	<test name="HeadFullTestcases">
+		<parameter name="connectionString" value="Y" />
+		<parameter name="sheet" value="3" />
+		<parameter name="db" value="googleSheet" />
+		<classes>
+			<class name="testcases.HeadFullTestCases">
+				<methods>
+					<include name="checkApiOAuth2" />
+					<include name="checkApiOAuth1" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+	<test name="ApplicationTest">
+		<classes>
+			<class name="testcases.ApplicationTest" />
+		</classes>
+	</test>
+
+
+	<test name="AddUserTest">
+		<classes>
+			<class name="testcases.AddUserTest" />
+		</classes>
+	</test>
+
+	<test name="PermissionTest">
+		<classes>
+			<class name="testcases.PermissionTest" />
+		</classes>
+	</test>
+</suite> <!-- Suite -->

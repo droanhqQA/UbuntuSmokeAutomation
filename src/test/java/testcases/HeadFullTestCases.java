@@ -63,9 +63,9 @@ public class HeadFullTestCases {
 				final URL driver_path = ConnectorsTest.class.getResource("/chromedriver.exe");
 			       System.out.println(driver_path);
 				
-				System.setProperty("webdriver.chrome.driver", (driver_path.toString().substring("file:/".length(),driver_path.toString().length())));
+				System.setProperty("webdriver.chrome.driver","/var/lib/jenkins/driver/chromedriver");
 				ChromeOptions options = new ChromeOptions();
-					//	options.addArguments("headless");
+						options.addArguments("headless");
 						options.addArguments("window-size=1920,1080");
 						options.addArguments("incognito");
 //						ChromeDriver driver = new ChromeDriver(options);

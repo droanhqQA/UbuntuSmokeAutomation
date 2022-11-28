@@ -12,7 +12,6 @@
 					<include name="connectionTestApi" />
 					<include name="connectionSaveApi" />
 					<include name="connectionAddApi" />
-
 				</methods>
 			</class>
 		</classes>

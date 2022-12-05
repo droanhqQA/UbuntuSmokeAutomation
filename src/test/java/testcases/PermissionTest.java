@@ -46,7 +46,7 @@ public class PermissionTest {
 		// Path of the excel file
 		final URL resource = PermissionTest.class.getResource("/Automation.xlsx");
 		System.out.println("file_path"+resource);
-		fs = new FileInputStream((resource.toString().substring("file:/".length(), resource.toString().length())));
+		fs = new FileInputStream(resource);
 
 		// Creating a workbook
 		// ConDetailDAO detailDAO = new ConDetailDAO(fs, workbook, con_sheet);

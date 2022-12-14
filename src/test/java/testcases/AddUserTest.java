@@ -5,6 +5,7 @@ import org.testng.annotations.Test;
 import com.dao.UserDAO;
 import com.dao.UserLogin;
 import com.manageusers.AddCheckUsers;
+import com.utils.Base_Class;
 import com.utils.TakeScreenshots;
 
 import org.testng.annotations.AfterMethod;
@@ -24,10 +25,11 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 
 
-public class AddUserTest {
-	ChromeDriver driver ;
-	FileInputStream fs ;
-	String email,pass;
+public class AddUserTest extends Base_Class
+{
+//	ChromeDriver driver ;
+//	FileInputStream fs ;
+//	String email,pass;
 	AddCheckUsers checkUsers;
 	public String new_email;
 	
@@ -36,20 +38,18 @@ public class AddUserTest {
 	{
 		Timestamp currentTimestamp = new java.sql.Timestamp(Calendar.getInstance().getTime().getTime());
 		System.out.println(currentTimestamp);
-		final URL driver_path = AddUserTest.class.getResource("/chromedriver.exe");
-	       System.out.println(driver_path);
+//		final URL driver_path = AddUserTest.class.getResource("/chromedriver.exe");
+//	    System.out.println(driver_path);
+//		System.setProperty("webdriver.chrome.driver", "C:\\Users\\Vinayak Hene\\Desktop\\DronaHQ\\Browser\\chromedriver.exe");
+//		ChromeOptions options = new ChromeOptions();
+//		options.addArguments("headless");					
+//		options.setAcceptInsecureCerts(true);
+//	    options.addArguments("window-size=1920,800");
+//	    driver = new ChromeDriver(options);
+//		driver.get("https://ubuntu.onprem.dronahq.com/apps");
+//		driver.manage().window().maximize();
 		
-		System.setProperty("webdriver.chrome.driver", "/var/lib/jenkins/driver/chromedriver");
-				ChromeOptions options = new ChromeOptions();
-				options.addArguments("headless");
-//						
-//						options.setAcceptInsecureCerts(true);
-						options.addArguments("window-size=1920,800");
-	
-		driver = new ChromeDriver(options);
-		
-		driver.get("https://ubuntu.onprem.dronahq.com/apps");
-		driver.manage().window().maximize();
+		BrowserSetUp();
 		
 		checkUsers = new AddCheckUsers(driver);
 		

@@ -37,14 +37,17 @@ import org.openqa.selenium.remote.*;
 import com.connectors.*;
 import com.dao.UserDAO;
 import com.dao.UserLogin;
+import com.utils.Base_Class;
 import com.utils.TakeScreenshots;
+import com.utils.Utility_Class;
 
 
-public class ApplicationTest {
-	public ChromeDriver driver;
+public class ApplicationTest extends Base_Class
+{
+//	public ChromeDriver driver;
 	public AppsNavFunc navFunc;
 	public final String RESULT_MSG="Record(s) found";
-	WebDriverWait wait;
+//	WebDriverWait wait;
 	String downloadFilepath;
 	@BeforeMethod
 	public void setUp() throws IOException
@@ -52,40 +55,42 @@ public class ApplicationTest {
 		Timestamp currentTimestamp = new java.sql.Timestamp(Calendar.getInstance().getTime().getTime());
 		System.out.println(currentTimestamp);
 		
-		final URL resource = ApplicationTest.class.getResource("/Automation.xlsx");
-	       System.out.println(resource);
+//		final URL resource = ApplicationTest.class.getResource("/Automation.xlsx");
+//	    System.out.println(resource);
+//		FileInputStream  fs = new FileInputStream("/"+(resource.toString().substring("file:/".length(),resource.toString().length())));
+//		XSSFWorkbook workbook= new XSSFWorkbook(fs);
+//		// con_sheet = workbook.getSheetAt(1);
+//		XSSFSheet user_sheet = workbook.getSheetAt(0);
+//		UserDAO userDAO = new UserDAO(fs, workbook, user_sheet);
+//		String u_name = userDAO.getU_name();
+//		String u_pass = userDAO.getU_pass();
+//		final URL driver_path = ApplicationTest.class.getResource("/chromedriver.exe");
+//	    System.out.println(driver_path);
+//		System.setProperty("webdriver.chrome.driver",driver_path.toString());
 		
-		FileInputStream  fs = new FileInputStream("/"+(resource.toString().substring("file:/".length(),resource.toString().length())));
-		XSSFWorkbook workbook= new XSSFWorkbook(fs);
+		BrowserSetUp();
+		String u_name =Utility_Class.GetExcelData(0, 0, 1) ;
+		String u_pass = Utility_Class.GetExcelData(0, 1, 1);
 		
-		// con_sheet = workbook.getSheetAt(1);
-		XSSFSheet user_sheet = workbook.getSheetAt(0);
-		UserDAO userDAO = new UserDAO(fs, workbook, user_sheet);
-		String u_name = userDAO.getU_name();
-		String u_pass = userDAO.getU_pass();
-		final URL driver_path = ApplicationTest.class.getResource("/chromedriver.exe");
-	       System.out.println(driver_path);
-		
-		System.setProperty("webdriver.chrome.driver","/var/lib/jenkins/driver/chromedriver");
 		downloadFilepath = "/home/nitin/Downloads";
 		HashMap<String, Object> chromePrefs = new HashMap<String, Object>();
 		chromePrefs.put("profile.default_content_settings.popups", 0);
 		chromePrefs.put("download.default_directory", downloadFilepath);
-		ChromeOptions options = new ChromeOptions();
+//		ChromeOptions options = new ChromeOptions();
 		options.setExperimentalOption("prefs", chromePrefs);
-		options.addArguments("headless");
-		options.addArguments("window-size=1500,800");
-		options.addArguments("incognito");
-		options.addArguments("disable-infobars");
-		options.setAcceptInsecureCerts(true);
-		driver = new ChromeDriver(options);
-		 wait = new WebDriverWait(driver, Duration.ofSeconds(30));
+//		options.addArguments("headless");
+//		options.addArguments("window-size=1500,800");
+//		options.addArguments("incognito");
+//		options.addArguments("disable-infobars");
+//		options.setAcceptInsecureCerts(true);
+//		driver = new ChromeDriver(options);
+//		wait = new WebDriverWait(driver, Duration.ofSeconds(30));
 		UserLogin user = new UserLogin(driver);
 		navFunc = new AppsNavFunc(driver);
-		driver.get("https://ubuntu.onprem.dronahq.com/");
+//		driver.get("https://ubuntu.onprem.dronahq.com/");
 		driver.manage().deleteAllCookies();
 		//driver.manage().timeouts().pageLoadTimeout(60,TimeUnit.SECONDS);
-		driver.manage().window().maximize();
+//		driver.manage().window().maximize();
 		user.login(u_name,u_pass);
 		
 	}
@@ -135,7 +140,7 @@ public class ApplicationTest {
 		navFunc.gotoApp(driver);
 		navFunc.addControl(driver);
 		driver.manage().timeouts().implicitlyWait(20,TimeUnit.SECONDS);
-		  driver.findElement(By.xpath("//div[@class='page-body-box']/div[2]")).click();//click tablegrid 
+		driver.findElement(By.xpath("//div[@class='page-body-box']/div[2]")).click();//click tablegrid 
 	    String un_name = driver.findElement(By.xpath("//input[@data-rv-input='model.field_display_key_name']")).getAttribute("value");
 	    System.out.println(un_name);
 	    wait.until(waitForSave());

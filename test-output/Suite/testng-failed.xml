@@ -1,16 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
-  <test thread-count="5" name="ApplicationTest(failed)">
+  <test thread-count="5" name="RestApi(failed)">
+    <parameter name="connectionString" value="N"/>
+    <parameter name="sheet" value="4"/>
+    <parameter name="db" value="restapi"/>
     <classes>
-      <class name="testcases.ApplicationTest">
+      <class name="testcases.ConnectorsTest">
         <methods>
-          <include name="checkUpdateAppGit"/>
-          <include name="closeBrowser"/>
-          <include name="checkUpdateAppJson"/>
+          <include name="connectionSaveApi" invocation-numbers="0 0 0"/>
+          <include name="connectionTestApi" invocation-numbers="0 0 0"/>
+          <include name="startTest"/>
+          <include name="driverClose"/>
+          <include name="connectionAddApi"/>
           <include name="setUp"/>
         </methods>
-      </class> <!-- testcases.ApplicationTest -->
+      </class> <!-- testcases.ConnectorsTest -->
     </classes>
-  </test> <!-- ApplicationTest(failed) -->
+  </test> <!-- RestApi(failed) -->
 </suite> <!-- Failed suite [Suite] -->

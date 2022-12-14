@@ -1,0 +1,14 @@
+<test name="GraphQL">
+		<parameter name="connectionString" value="N" />
+		<parameter name="sheet" value="5" />
+		<parameter name="db" value="graphql" />
+		<classes>
+			<class name="testcases.ConnectorsTest">
+				<methods>
+					<include name="connectionTestApi" />
+					<include name="connectionSaveApi" />
+					<include name="connectionAddApi" />
+				</methods>
+			</class>
+		</classes>
+	</test>

@@ -231,10 +231,11 @@ public class AddingConnector  {
 		XSSFWorkbook workbook;
 		XSSFSheet con_sheet=null;
 		try {
-			final URL resource = AddingConnector.class.getResource("/Automation.xlsx");
-		       System.out.println(resource);
-			
-			fs = new FileInputStream((resource.toString().substring("file:/".length(),resource.toString().length())));
+//			final URL resource = AddingConnector.class.getResource("/Automation.xlsx");
+//		       System.out.println(resource);
+//			
+//			fs = new FileInputStream((resource.toString().substring("file:/".length(),resource.toString().length())));
+			fs = new FileInputStream("C:\\Users\\Vinayak Hene\\git\\UbuntuSmokeAutomation\\src\\main\\resources\\Automation.xlsx");
 			workbook = new XSSFWorkbook(fs);
 			con_sheet = workbook.getSheetAt(sheet_no);
 		} catch (IOException e) {

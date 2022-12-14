@@ -3,13 +3,19 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="testcases.ApplicationTest">
+      <class name="testcases.ConnectorsTest">
         <methods>
-          <include name="closeBrowser"/>
+          <include name="connectionSaveApi"/>
+          <include name="connectionTestApi"/>
+          <include name="saveConnection"/>
+          <include name="startTest"/>
+          <include name="driverClose"/>
+          <include name="addQuery"/>
+          <include name="connectionAddApi"/>
+          <include name="connectionTest"/>
           <include name="setUp"/>
-          <include name="checkAPicall"/>
         </methods>
-      </class> <!-- testcases.ApplicationTest -->
+      </class> <!-- testcases.ConnectorsTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -52,10 +52,10 @@ public class ConnectorsTest {
 		Timestamp currentTimestamp = new java.sql.Timestamp(Calendar.getInstance().getTime().getTime());
 		System.out.println(currentTimestamp);
 		// Path of the excel file
-		final URL resource = ConnectorsTest.class.getResource("/Automation.xlsx");
-		System.out.println(resource);
-		fs = new FileInputStream("/"+(resource.toString().substring("file:/".length(), resource.toString().length())));
-
+//		final URL resource = ConnectorsTest.class.getResource("/Automation.xlsx");
+//		System.out.println(resource);
+//		fs = new FileInputStream("/"+(resource.toString().substring("file:/".length(), resource.toString().length())));
+		fs = new FileInputStream("C:\\Users\\Vinayak Hene\\eclipse-workspace\\UbuntuSmokeAutomation123\\src\\main\\resources\\Automation.xlsx");
 		// Creating a workbook
 		XSSFWorkbook workbook = new XSSFWorkbook(fs);
 		XSSFSheet user_sheet = workbook.getSheetAt(0);
@@ -67,14 +67,14 @@ public class ConnectorsTest {
 		String u_pass = userDAO.getU_pass();
 		String con_name, con_string, con_uname, con_upass, con_db;
 		// System.out.println(detailDAO.connectionName()+"\n"+detailDAO.connectionString());
-		final URL driver_path = ConnectorsTest.class.getResource("/chromedriver.exe");
-		System.out.println(driver_path);
+//		final URL driver_path = ConnectorsTest.class.getResource("/chromedriver.exe");
+//		System.out.println(driver_path);
 
-		System.setProperty("webdriver.chrome.driver",
-				"/var/lib/jenkins/driver/chromedriver");
+//		System.setProperty("webdriver.chrome.driver","/var/lib/jenkins/driver/chromedriver");
+		System.setProperty("webdriver.chrome.driver","C:\\Users\\Vinayak Hene\\git\\UbuntuSmokeAutomation\\src\\main\\resources\\Browser\\chromedriver.exe");
 		
 				ChromeOptions options = new ChromeOptions();
-				options.addArguments("--headless");
+//				options.addArguments("--headless");
 				options.addArguments("--window-size=1920,1080");
 				options.addArguments("--no-sandbox");
 				options.addArguments("--disable-setuid-sandbox");

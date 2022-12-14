@@ -14,9 +14,10 @@ public class GetTimeouts {
 		FileInputStream ip;
 		Properties prop=new Properties();;
 		try {
-			 final URL resource = AddingConnector.class.getResource("/TimeConfig.properties");
-		       System.out.println(resource);
-			ip = new FileInputStream("/"+(resource.toString().substring("file:/".length(),resource.toString().length())));
+//			 final URL resource = AddingConnector.class.getResource("/TimeConfig.properties");
+//		       System.out.println(resource);
+//			ip = new FileInputStream("/"+(resource.toString().substring("file:/".length(),resource.toString().length())));
+			ip = new FileInputStream("C:\\Users\\Vinayak Hene\\git\\UbuntuSmokeAutomation\\src\\main\\resources\\TimeConfig.properties");
 			prop.load(ip);
 			max_time =Long.parseLong(prop.getProperty("max_time"));
 			min_time =Long.parseLong(prop.getProperty("min_time"));
